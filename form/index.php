@@ -8,19 +8,19 @@
 	
 	<label><i class="icon-flag"></i> Location</label>
 	<label class="radio inline">
-		<input type="radio" name="location" value="option1">
+		<input type="radio" name="location" value="#1: Ros">
 		Location #1
 	</label>
 	<label class="radio inline">
-		<input type="radio" name="location" value="option1">
+		<input type="radio" name="location" value="#2: Mar">
 		Location #2
 	</label>
 	<label class="radio inline">
-		<input type="radio" name="location" value="option1">
+		<input type="radio" name="location" value="#3: Nor">
 		Location #3
 	</label>
 	<label class="radio inline">
-		<input type="radio" name="location" value="option1">
+		<input type="radio" name="location" value="#4: Ken">
 		Location #4
 	</label>
 
@@ -41,9 +41,9 @@
 	<label><i class="icon-plus"></i> Total Sales</label>
 	<div class="input-prepend input-append">
 		<span class="add-on">$</span>
-		<input class="input-mini numeric" required type="text" name="total-sales" id="total-sales">
+		<input class="input-mini numeric" required type="text" name="total-sales" id="total-sales" data-sum="0">
 	</div>
-	<span class="help-inline text-error hide">Wrong number</span>
+	<span class="help-inline text-error hide wrong-number" style="color: red;">Wrong number</span>
 
 	<label><i class="icon-user"></i> Did you have more than one person using same CC #?</label>
 	<label class="radio inline">

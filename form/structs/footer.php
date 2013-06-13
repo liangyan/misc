@@ -2,6 +2,6 @@
 		<script type="text/javascript" src="assets/js/bootstrap-datepicker.min.js"></script>
 		<script type="text/javascript" src="assets/js/jquery.validate.js"></script>
 		<script type="text/javascript" src="assets/js/jquery-numeric.js"></script>
-		<script type="text/javascript" src="assets/js/common.js"></script>
+		<script type="text/javascript" src="assets/js/common.js?<?php echo time(); ?>"></script>
 	</body>
 </html>

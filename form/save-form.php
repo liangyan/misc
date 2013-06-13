@@ -5,4 +5,7 @@ if (!$data) die;
 
 // var_dump($data);die;
 
-commit($data);
+if ( commit($data) ) {
+	echo "Data is submitted!";
+	die;
+}

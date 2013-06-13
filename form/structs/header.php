@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>
-			Dummy Title
+			Daily Input
 		</title>
 		
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
@@ -20,12 +20,7 @@
 		<div class="navbar navbar-fixed-top navbar-inverse">
 			<div class="navbar-inner">
 				<div class="container">
-					<div class="brand">Dummy Title</div>
-					<ul class="nav pull-right">
-						<li>
-							<a target="_blank" href="https://docs.google.com/spreadsheet/ccc?key=<?php echo SPREADSHEETKEY; ?>">Boss</a>
-						</li>
-					</ul>
+					<div class="brand">Daily Input</div>
 				</div>
 			</div>
 		</div>
