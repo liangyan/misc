@@ -9,19 +9,19 @@
 	<label><i class="icon-flag"></i> Location</label>
 	<label class="radio inline">
 		<input type="radio" name="location" value="#1: Ros">
-		Location #1
+		Ros
 	</label>
 	<label class="radio inline">
 		<input type="radio" name="location" value="#2: Mar">
-		Location #2
+		Mar
 	</label>
 	<label class="radio inline">
 		<input type="radio" name="location" value="#3: Nor">
-		Location #3
+		Nor
 	</label>
 	<label class="radio inline">
 		<input type="radio" name="location" value="#4: Ken">
-		Location #4
+		Ken
 	</label>
 
 	<label><i class="icon-calendar"></i> Date</label>

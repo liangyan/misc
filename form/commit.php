@@ -31,11 +31,11 @@ function commit($data) {
 	if ( !file_exists($fileName) ) {
 		$headerRow = array_keys($rowData);
 		$fp = fopen($fileName, 'w');
-		fputcsv($fp, $headerRow, ";");
+		fputcsv($fp, $headerRow, ",");
 		fclose($fp);
 	}
 	$fp = fopen($fileName, 'a');
-	fputcsv($fp, $rowData, ";");
+	fputcsv($fp, $rowData, ",");
 	fclose($fp);
 
 // saving server sales
@@ -54,11 +54,11 @@ function commit($data) {
 		if ( !file_exists($fileName) ) {
 			$headerRow = array_keys($rowData);
 			$fp = fopen($fileName, 'w');
-			fputcsv($fp, $headerRow, ";");
+			fputcsv($fp, $headerRow, ",");
 			fclose($fp);
 		}
 		$fp = fopen($fileName, 'a');
-		fputcsv($fp, $rowData, ";");
+		fputcsv($fp, $rowData, ",");
 		fclose($fp);
 	}
 	return true;
