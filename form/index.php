@@ -32,6 +32,8 @@
 		<div class="input-prepend input-append">
 			<span class="add-on">server #</span>
 			<input class="input-mini numeric" type="text" name="servers[<?php echo $i; ?>][no]">
+			<span class="add-on">first name</span>
+			<input class="input-mini" type="text" name="servers[<?php echo $i; ?>][first_name]">
 			<span class="add-on">sales $</span>
 			<input class="input-mini numeric server-sales" type="text" name="servers[<?php echo $i; ?>][sales]">
 		</div>

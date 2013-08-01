@@ -48,6 +48,7 @@ function commit($data) {
 			"location" => $data["location"],
 			"date" => $data["date"],
 			"server-no" => $server["no"],
+			"first_name" => $server["first_name"],
 			"sales" => $server["sales"]
 		);
 		
