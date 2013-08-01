@@ -4,7 +4,7 @@
 	<h1>Daily Input <small>fill in the blanks</small></h1>
 </div>
 
-<form id="main" method="post" action="save-form.php">
+<form id="main" method="post" action="save-form.php" autocomplete="off">
 	
 	<label><i class="icon-flag"></i> Location</label>
 	<label class="radio inline">
@@ -63,6 +63,7 @@
 
 	<div class="form-actions">
 		<button class="btn btn-large btn-primary" type="submit"> Submit</button>
+		<input  class="btn btn-large" type="reset" value="Reset Form">
 	</div>
 </form>
 

@@ -4,6 +4,13 @@ $('.datepicker').datepicker({
 
 if ( $("form#main").length ) {
 	$("form#main").validate();
+	$("form#main").submit(function() {
+		var checkedInputs = $(this).find('input[name="location"]:checked');
+		if (!checkedInputs.length) {
+			alert("You must check one location!");
+			return false;
+		}
+	});
 }
 
 if ( $("input.numeric").length ) {
@@ -22,11 +29,13 @@ $(".server-sales").keyup(function() {
 $("#total-sales").keyup(function() {
 	var input = $(this);
 	var notice = $(".wrong-number");
-	
-	var inputVal = 0;
-	if ($.isNumeric(parseInt(input.val()))) inputVal = parseInt(input.val());
 
-	var diff = Math.abs( inputVal - parseInt(input.attr("data-sum")) );
+	var inputVal = 0;
+	if ($.isNumeric(parseFloat(input.val()))) inputVal = parseFloat(input.val());
+
+	console.log(inputVal+" vs. " + parseFloat(input.attr("data-sum")));
+
+	var diff = Math.abs( inputVal - parseFloat(input.attr("data-sum")) );
 	if (  diff < 0.0001  ) {
 		notice.hide();
 	} else {
